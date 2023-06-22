@@ -47,19 +47,17 @@ public class RealizarReserva extends javax.swing.JFrame {
 
         jLabel2.setText("CPF do cliente");
 
-        jTextField1.setText("jTextField1");
-
         jLabel3.setText("Numero do quarto");
-
-        jTextField2.setText("jTextField2");
 
         jLabel4.setText("Data de entrada");
 
-        jTextField3.setText("jTextField3");
-
         jLabel5.setText("Data de saída");
 
-        jTextField4.setText("jTextField4");
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Reservar");
 
@@ -133,6 +131,10 @@ public class RealizarReserva extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
     /**
      * @param args the command line arguments

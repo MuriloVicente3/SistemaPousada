@@ -15,6 +15,8 @@ import java.util.Date;
  */
 public class Home extends javax.swing.JFrame {
 
+    
+    
     Date dataAtual = new Date();
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         String dataFormatada = dateFormat.format(dataAtual);
@@ -64,7 +66,6 @@ public class Home extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -96,7 +97,7 @@ public class Home extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 204, 204));
-        jLabel4.setText("12");
+        jLabel4.setText("--");
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/check-in.png"))); // NOI18N
 
@@ -136,7 +137,7 @@ public class Home extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 48)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel6.setText("12");
+        jLabel6.setText("--");
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/check-out.png"))); // NOI18N
 
@@ -176,11 +177,11 @@ public class Home extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel7.setText("100%");
+        jLabel7.setText("--%");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 48)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel5.setText("12");
+        jLabel5.setText("--");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -305,21 +306,13 @@ public class Home extends javax.swing.JFrame {
 
         jMenu1.setText("Clientes");
 
-        jMenuItem1.setText("Cadastro");
+        jMenuItem1.setText("Cadastro / Consulta");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
             }
         });
         jMenu1.add(jMenuItem1);
-
-        jMenuItem2.setText("Consulta");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
@@ -396,13 +389,6 @@ public class Home extends javax.swing.JFrame {
         frameCadastroDeClientes.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        ConsultaDeClientes frameConsultaDeClientes = new ConsultaDeClientes();
-        jDesktopPane1.add(frameConsultaDeClientes);
-        frameConsultaDeClientes.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
         CadastroDeAcomodacoes frameCadastroDeAcomodacoes = new CadastroDeAcomodacoes();
@@ -472,7 +458,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;

@@ -13,14 +13,18 @@ import java.util.Date;
 public class Cliente extends Pessoa{
     
     private boolean hospedado = false;
+    private int id;
+   
 
-    public Cliente(String cpf, String nome, String telefone, String dataDeNascimento, String sexo) {
-        super(cpf, nome, telefone, dataDeNascimento, sexo);
+    
+
+    public Cliente(String cpf, String nome, String telefone, String dataDeNascimento, String sexo, String observacao) {
+        super(cpf, nome, telefone, dataDeNascimento, sexo, observacao);
     }
 
     public Cliente() {
     }
-    
+
 
     
 
@@ -34,7 +38,17 @@ public class Cliente extends Pessoa{
         this.hospedado = hospedado;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     
+    
+
+
 
     
     

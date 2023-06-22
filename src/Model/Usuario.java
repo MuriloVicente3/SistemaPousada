@@ -4,31 +4,28 @@
  */
 package Model;
 
-import java.util.Date;
-
 /**
  *
  * @author muril
  */
-public class Usuario extends Pessoa {
-     private String login;
+public class Usuario {
+    private int id; 
+    private String login;
      private String senha;
 
-    public Usuario(String login, String senha, String cpf, String nome, String telefone, String dataDeNascimento, String sexo) {
-        super(cpf, nome, telefone, dataDeNascimento, sexo);
-        this.login = login;
-        this.senha = senha;
-    }
-
-    
-
-    public String getNomeUsuario() {
+    public String getLogin() {
         return login;
     }
 
-    public void setNomeUsuario(String nomeUsuario) {
-        this.login = nomeUsuario;
+    public int getId() {
+        return id;
     }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    
 
     public String getSenha() {
         return senha;

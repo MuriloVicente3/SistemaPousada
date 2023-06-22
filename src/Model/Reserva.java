@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
  */
 public class Reserva {
 
+    private int id;
     private Date dataDeEntrada;
     private Date dataDeSaida;
     private Cliente cliente;

@@ -16,7 +16,7 @@ public abstract class Pessoa {
     private String cpf;
     private String nome;
     private String telefone;
-    private Date dataDeNascimento;
+    private String dataDeNascimento;
     private String sexo;
     private String observacao;
 
@@ -24,19 +24,23 @@ public abstract class Pessoa {
         this.cpf = cpf;
         this.nome = nome;
         this.telefone = telefone;
-        try {
-            this.dataDeNascimento = new SimpleDateFormat("dd/MM/yyyy").parse(dataDeNascimento);
-        } catch (ParseException e) {
-            // Lidar com a exceção aqui
-            e.printStackTrace(); // Imprime o rastreamento da exceção no console
-            // Ou realizar outras ações, como exibir uma mensagem de erro para o usuário
-        }
+        this.dataDeNascimento = dataDeNascimento;
         this.sexo = sexo;
         
+    }
+    public Pessoa(String cpf, String nome, String telefone, String dataDeNascimento, String sexo, String observacao) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.telefone = telefone;
+        this.dataDeNascimento = dataDeNascimento;
+        this.sexo = sexo;
+        this.observacao = observacao;
     }
 
     public Pessoa() {
     }
+
+    
 
     public String getSexo() {
         return sexo;
@@ -84,11 +88,11 @@ public abstract class Pessoa {
         this.telefone = telefone;
     }
 
-    public Date getDataDeNascimento() {
+    public String getDataDeNascimento() {
         return dataDeNascimento;
     }
 
-    public void setDataDeNascimento(Date dataDeNascimento) {
+    public void setDataDeNascimento(String dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
     
